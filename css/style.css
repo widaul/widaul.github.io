@@ -1,0 +1,207 @@
+body {
+  font-family: Inter, sans-serif;
+
+  background: #0f172a;
+
+  color: white;
+
+  scroll-behavior: smooth;
+}
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar {
+    padding: 18px 0;
+    transition: all .35s ease;
+    z-index: 1000;
+}
+
+.navbar.scrolled {
+    padding: 12px 0;
+    background: rgba(2, 6, 23, 0.85);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff !important;
+    letter-spacing: .5px;
+}
+
+.navbar-brand span{
+    color:#2563EB;
+}
+
+.navbar-nav .nav-link {
+    color: #CBD5E1;
+    margin-left: 18px;
+    font-weight: 500;
+    transition: .3s;
+    position: relative;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+.navbar-nav .nav-link::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -6px;
+
+    width: 0;
+
+    height: 2px;
+
+    background: #2563EB;
+
+    transition: .3s;
+
+}
+
+.navbar-nav .nav-link:hover::after{
+
+    width:100%;
+
+}
+
+.navbar-nav .nav-link.active{
+
+    color:white;
+
+}
+
+.navbar-nav .nav-link.active::after{
+
+    width:100%;
+
+}
+
+.navbar-toggler{
+
+    border:none;
+
+    box-shadow:none!important;
+
+}
+
+.navbar-toggler:focus{
+
+    box-shadow:none;
+
+}
+.hero {
+  min-height: 100vh;
+
+  display: flex;
+
+  align-items: center;
+}
+
+.section {
+  padding: 100px 0;
+  margin-top: 2cm;
+}
+
+.content-section{
+    margin-top: 2cm;
+}
+
+.glass {
+   background: rgba(15,23,42,.55);
+
+    backdrop-filter: blur(18px);
+
+    -webkit-backdrop-filter: blur(18px);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.hero-img {
+  width: 320px;
+
+  border-radius: 50%;
+
+  box-shadow: 0 20px 60px rgba(37, 99, 235, 0.4);
+}
+
+.tech-card,
+.project-card,
+.card-custom {
+  background: #1e293b;
+
+  padding: 25px;
+
+  border-radius: 20px;
+
+  transition: 0.3s;
+
+  height: 100%;
+}
+
+.tech-card:hover,
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.tech-card span {
+  display: inline-block;
+
+  background: #2563eb;
+
+  padding: 6px 14px;
+
+  margin: 5px;
+
+  border-radius: 20px;
+}
+
+.project-card img {
+  width: 100%;
+
+  border-radius: 15px;
+
+  margin-bottom: 20px;
+}
+
+.timeline {
+  border-left: 3px solid #2563eb;
+
+  padding-left: 30px;
+}
+
+.timeline-item {
+  margin-bottom: 50px;
+}
+
+.social a {
+  font-size: 25px;
+
+  margin-right: 20px;
+
+  color: white;
+}
+
+#progress {
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  height: 4px;
+
+  background: #2563eb;
+
+  width: 0;
+
+  z-index: 9999;
+}
